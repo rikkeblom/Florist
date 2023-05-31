@@ -23,7 +23,7 @@ jobs:
       run: composer run-script lint
 
     - name: Scan for bugs and logical erros with PHPStan
-      run: composer run-script lint
+      run: composer run-script phpstan
 
     - name: Run PHPUnit tests
       run: composer run-script test
