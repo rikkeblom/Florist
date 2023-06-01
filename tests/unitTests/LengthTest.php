@@ -28,12 +28,12 @@ class LengthTest extends TestCase
     public function convertPasses(): array
     {
         return [
-            [0, Length::IMPERIAL, 0],                                               // Lower valid boundary
+            [0, Length::IMPERIAL, 0],
             [1, Length::IMPERIAL, 2.54],
             [0.5, Length::IMPERIAL, 1.27],
             [0.25, Length::IMPERIAL, 0.64],
-            [7.077532027016991E+307, Length::IMPERIAL, 1.7976931348623157E+308],    // Upper valid boundary
-            [0, Length::METRIC, 0],                                                 // Lower valid boundary
+            [7.077532027016991E+307, Length::IMPERIAL, 1.7976931348623157E+308],
+            [0, Length::METRIC, 0],
             [2.54, Length::METRIC, 1],
             [1.27, Length::METRIC, 0.5],
             [0.635, Length::METRIC, 0.25],
